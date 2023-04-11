@@ -1,3 +1,32 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
+
+body {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+#InputElement {
+    height: 2rem;
+    width: 10rem;
+    font-size: 1.5rem;
+}
+
+#Add {
+    height: 2rem;
+    width: 10rem;
+    font-size: 1.8rem;
+}
+
+li {
+    font-size: 2rem;
+    list-style-type: none;
+    background-color: #decaca;
+    margin: 1px;
+    
+}
