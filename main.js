@@ -13,10 +13,10 @@ Add.addEventListener("click", () => {
 
     delete_button.addEventListener("click", () => {
         NewObject.remove()
-    alert("Erfolgreich gelöscht")
+    //alert("Erfolgreich gelöscht")
     })
 
-    alert("Erfolgreich hinzugefügt!")
+    //alert("Erfolgreich hinzugefügt!")
 });
 
 /*window.onload = function() {
