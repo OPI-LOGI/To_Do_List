@@ -24,6 +24,9 @@ Add.addEventListener("click", () => {
   NewObject.appendChild(edit_button);
   todo_ul.appendChild(NewObject)
 
+  //Fügt das Objekt ganz oben ein
+  //todo_ul.insertBefore(NewObject, todo_ul.firstChild);
+
   delete_button.addEventListener("click", () => {
     NewObject.remove()
     //alert("Erfolgreich gelöscht")
