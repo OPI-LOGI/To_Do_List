@@ -19,6 +19,9 @@ Add.addEventListener("click", () => {
   let delete_button = document.createElement("button");
   delete_button.innerText = "x"
   NewObject.appendChild(delete_button)
+  let edit_button = document.createElement("button");
+  edit_button.innerText = "Bearbeiten"
+  NewObject.appendChild(edit_button);
   todo_ul.appendChild(NewObject)
 
   delete_button.addEventListener("click", () => {
