@@ -5,6 +5,7 @@
 body {
     padding: 1rem;
     margin: 1rem;
+    background: linear-gradient(90deg, rgba(146,255,158,1) 0%, rgba(118,255,227,1) 50%, rgba(0,212,255,1) 100%);
 }
 
 h1 {
@@ -57,12 +58,15 @@ ul {
 li {
     font-size: 2rem;
     list-style-type: none;
-    background-color: #decaca;
+    background-color: none;
     margin: 1px;
     display: flex;
     align-items: center;
     border: 3px solid black;
     border-radius: 15px;
+    box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75);
 }
 
 li input {

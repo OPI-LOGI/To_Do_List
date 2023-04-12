@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,19 @@
     <title>Einzelansicht</title>
 </head>
 <body>
-    <h1 id="task"></h1>
-
     <script>
         async function getTasks(id) {
-            const response = await fetch ""
-        }
+            const response = await fetch("http://localhost:3003/task/" + id, {
+            method: "GET",
+            credentials: "include"
+        })
+        const task = await reponse.json()
+        taskTitle.innerText = task.title
+    }
+
+    const queryParams = new URLSearchParams(window.location.search)
+
+
     </script>
 </body>
 </html>
