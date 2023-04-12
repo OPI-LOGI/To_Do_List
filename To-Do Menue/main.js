@@ -19,6 +19,7 @@ Add.addEventListener("click", () => {
   let NewObject = document.createElement("li");
   NewObject.innerText = Input;
   let edit_button = document.createElement("button");
+  edit_button.title = "Bearbeiten";
   edit_button.innerText = "Bearbeiten";
   NewObject.appendChild(edit_button);
   let delete_button = document.createElement("button");
@@ -37,7 +38,7 @@ Add.addEventListener("click", () => {
   const tasksElement = document.getElementById("tasks");
 
   async function getTasks() {
-    const response = await fetch("http://localhost:5500/tasks", {
+    const response = await fetch("http://localhost:3000/tasks", {
       method: "GET"
     })
     const json = await response.json()
