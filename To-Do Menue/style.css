@@ -32,7 +32,20 @@ h2 {
     flex: 1 1 0%;
     border-radius: 0.5rem;
     appearance: none;
-    border: none;
+    /*border: none;*/
+    outline: none;
+    background: none;
+    margin: 5px;
+}
+
+#get {
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.8rem;
+    flex: 1 1 0%;
+    border-radius: 0.5rem;
+    appearance: none;
+    /*border: none;*/
     outline: none;
     background: none;
 }

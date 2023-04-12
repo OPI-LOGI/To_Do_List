@@ -15,8 +15,20 @@ InputElement.addEventListener("input", () => {
 
 //Events der Buttons Löschen/Bearbeiten/Speichern
 Add.addEventListener("click", () => {
-  let Input = InputElement.value;
-  let NewObject = document.createElement("li");
+
+  async function getTasks() {
+    const response = await fetch("http://localhost:3000/tasks", {
+      method: "GET"
+    })
+    const json = await response.json()
+  
+    renderTasks(json)
+  }
+
+  getTasks()
+})
+
+/*let NewObject = document.createElement("li");
   const newTaskElementInput = document.createElement("input")
   newTaskElementInput.value = Input;
   newTaskElementInput.readOnly = true
@@ -57,8 +69,8 @@ Add.addEventListener("click", () => {
       newTaskElementInput.value = UpdatedText;
       document.getElementById("edit_div").style.display = "none";
     };
-  });
-});
+  }); 
+});*/
 
 /*window.onload = function() {
     const buttonElement = document.getElementById("Add");
