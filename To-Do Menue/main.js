@@ -126,7 +126,6 @@ function renderTasks(tasks) {
     });
 
     edit_button.addEventListener("click", () => {
-      //debugger
       document.getElementById("edit_div").style.display = "block";
       document.getElementById("edit_input").value = newTaskElementInput.value.trim();
       const Save = document.getElementById("Save");
