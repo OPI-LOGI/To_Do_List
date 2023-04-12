@@ -106,18 +106,28 @@ function renderTasks(tasks) {
     const taskList = document.getElementById("todo_ul");
     taskList.append(newTaskElement);
 
+    //Einzelansicht
     const look_button = document.createElement("button");
     look_button.classList.add("look-button");
     look_button.title = "Einzelansicht";
     look_button.innerText = "Einzelansicht";
+
+    //Einzelansicht wechseln bei betätigung des Buttons
+    look_button.addEventListener("click", () => {
+      const taskId = "http://localhost:3003/task/"; 
+      window.location.href = 'http://127.0.0.1:5500/To-Do%20Menue/Einzelansicht.html?id=${taskId}';
+    });    
+
     newTaskElement.appendChild(look_button);
 
+    //Editbutton
     const edit_button = document.createElement("button");
     edit_button.classList.add("edit-button");
     edit_button.title = "Bearbeiten";
     edit_button.innerText = "Bearbeiten";
     newTaskElement.appendChild(edit_button);
 
+    //Deletebutton
     const delete_button = document.createElement("button");
     delete_button.classList.add("delete-button");
     delete_button.title = "Bearbeiten";
@@ -131,6 +141,7 @@ function renderTasks(tasks) {
       alert("Erfolgreich gelöscht")
     });
 
+    //Editieren und Speichern
     edit_button.addEventListener("click", () => {
       document.getElementById("edit_div").style.display = "block";
       document.getElementById("edit_input").value = newTaskElementInput.value.trim();
