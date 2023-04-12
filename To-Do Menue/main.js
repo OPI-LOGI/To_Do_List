@@ -106,6 +106,12 @@ function renderTasks(tasks) {
     const taskList = document.getElementById("todo_ul");
     taskList.append(newTaskElement);
 
+    const look_button = document.createElement("button");
+    look_button.classList.add("look-button");
+    look_button.title = "Einzelansicht";
+    look_button.innerText = "Einzelansicht";
+    newTaskElement.appendChild(look_button);
+
     const edit_button = document.createElement("button");
     edit_button.classList.add("edit-button");
     edit_button.title = "Bearbeiten";

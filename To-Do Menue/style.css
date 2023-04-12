@@ -108,7 +108,6 @@ li input {
     outline: none;
     background: none;
     color: blue;
-    margin-left: auto;
 }
 
 .delete-button {
@@ -121,3 +120,13 @@ li input {
     border-radius: 10px;
 }
 
+.look-button {
+    padding: 2rem;
+    font-size: 1.8rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    color: blue;
+    margin-left: auto;
+}
