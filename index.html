@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fetch</title>
+</head>
+
+<body>
+	<button onclick="getTasks()">Get Tasks</button>
+	<button onclick="addTask()">Add Task</button>
+	<ul id="tasks"></ul>
+	<script>
+		const tasksElement = document.getElementById("tasks");
+
+		async function getTasks() {
+			const response = await fetch("http://localhost:5500/tasks", {
+				method: "GET"
+			})
+			const json = await response.json()
+
+			renderTasks(json)
+		}
+
+		async function addTask() {
+			const title = prompt("Was soll im Task stehen?");
+
+			const response = await fetch("http://localhost:5500/task/" + tasknr, {
+				method: "POST",
+				headers: {
+					"content-type": "application/json"
+				},
+				body: JSON.stringify({
+					"title": title
+				})
+			})
+
+			getTasks()
+		}
+
+		function renderTasks(tasks) {
+			tasksElement.replaceChildren();
+
+			Array.from(tasks).forEach(function (item) {
+				const liElement = document.createElement("li")
+				liElement.innerText = item.title;
+				tasksElement.append(liElement)
+			})
+		}
+
+	</script>
+</body>
+
+</html>

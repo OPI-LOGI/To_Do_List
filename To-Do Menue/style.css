@@ -11,16 +11,34 @@ h1 {
     font-size: 5rem;
 }
 
+h2 {
+    font-size: 3.5rem;
+}
+
 #InputElement {
     height: 2rem;
     width: 30rem;
     font-size: 1.5rem;
+    flex: 1 1 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
 }
 
 #Add {
-    height: 2rem;
+    height: 4rem;
     width: 10rem;
     font-size: 1.8rem;
+    flex: 1 1 0%;
+    border-radius: 0.5rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+ul {
+    padding-left: 0px;
 }
 
 li {
@@ -29,4 +47,26 @@ li {
     background-color: #decaca;
     margin: 1px;
     
+}
+
+#edit_input {
+    height: 2rem;
+    width: 30rem;
+    font-size: 1.5rem;
+    flex: 1 1 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#Save {
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.8rem;
+    flex: 1 1 0%;
+    border-radius: 0.5rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
 }
