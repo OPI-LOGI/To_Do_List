@@ -61,6 +61,16 @@ li {
     margin: 1px;
     display: flex;
     align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+li input {
+    font-size: 1.8rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
 }
 
 #edit_input {
@@ -83,31 +93,27 @@ li {
     border: none;
     outline: none;
     background: none;
+    color: blue;
 }
 
 .edit-button {
-    padding: 5px;
-    height: 4rem;
-    width: 1rem;
+    padding: 2rem;
     font-size: 1.8rem;
-    border-radius: 0.5rem;
     appearance: none;
     border: none;
     outline: none;
     background: none;
+    color: blue;
     margin-left: auto;
 }
 
 .delete-button {
-    padding: 10px;
-    height: 4rem;
-    width: 1rem;
+    padding: 2rem;
     font-size: 1.8rem;
-    border-radius: 0.5rem;
     appearance: none;
     border: none;
     outline: none;
-    background: none;
-    margin-left: auto;
+    background: red;
+    border-radius: 10px;
 }
 
