@@ -1,18 +1,18 @@
 async function checkLoggedIn() {
-  const response = await fetch("http://localhost:3000/auth/cookie/status", {
+  const response = await fetch("http://localhost:3003/auth/cookie/status", {
     credentials: "include",
   })
 
   if (response.ok) {
   } else if (response.status == 401) {
-    alert("nicht eingeloggt");
+    alert("Benutzername oder Passwort stimmt nicht");
   }
 }
 
 async function tryLogin() {
   const email = document.getElementById("email_input").value
   const password = document.getElementById("password_input").value
-  const response = await fetch("http://localhost:3000/auth/cookie/login", {
+  const response = await fetch("http://localhost:3003/auth/cookie/login", {
     credentials: "include",
     method: "POST",
     headers: {

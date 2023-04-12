@@ -107,11 +107,14 @@ function renderTasks(tasks) {
     taskList.append(newTaskElement);
 
     const edit_button = document.createElement("button");
+    edit_button.classList.add("edit-button");
     edit_button.title = "Bearbeiten";
     edit_button.innerText = "Bearbeiten";
     newTaskElement.appendChild(edit_button);
 
     const delete_button = document.createElement("button");
+    delete_button.classList.add("delete-button");
+    delete_button.title = "Bearbeiten";
     delete_button.innerText = "x";
     newTaskElement.appendChild(delete_button);
     
@@ -119,7 +122,7 @@ function renderTasks(tasks) {
 
     delete_button.addEventListener("click", () => {
       newTaskElement.remove();
-      //alert("Erfolgreich gelöscht")
+      alert("Erfolgreich gelöscht")
     });
 
     edit_button.addEventListener("click", () => {

@@ -59,7 +59,8 @@ li {
     list-style-type: none;
     background-color: #decaca;
     margin: 1px;
-    
+    display: flex;
+    align-items: center;
 }
 
 #edit_input {
@@ -83,3 +84,30 @@ li {
     outline: none;
     background: none;
 }
+
+.edit-button {
+    padding: 5px;
+    height: 4rem;
+    width: 1rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: auto;
+}
+
+.delete-button {
+    padding: 10px;
+    height: 4rem;
+    width: 1rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: auto;
+}
+
